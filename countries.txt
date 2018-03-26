@@ -1,0 +1,76 @@
+angola
+argentina
+asia
+australia
+bangladesh
+belgium
+brasil
+burkina faso
+california
+cambodia
+canada
+chile
+china
+colombia
+costa rica
+denmark
+deutschland
+ecuador
+egypt
+espana
+europe
+europe north
+france
+greece
+gulf arabic
+haute volta
+hong-kong
+india
+indonesia
+irak
+iran
+ireland
+italia
+kenya
+korea
+laos
+latin america
+liban
+madagascar
+malaysia
+marocco
+mexico
+middle near east
+mozambique
+nederland
+new zealand
+nigeria
+nippon
+norway
+osterreich
+others countries
+ouganda
+oukraina
+pakistan
+papua newguinea
+paraguay
+peru
+philippines
+polska
+portugal
+russia
+saudi arabia
+singapore
+south africa
+suomi
+sverige
+switzerland
+syria
+taiwan
+thailand
+turkey
+united-kingdom
+usa
+venezuela
+vietnam
+zambie
