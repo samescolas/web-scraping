@@ -74,6 +74,7 @@ class BikeScraper:
 		# this will help control the number of API requests to
 		# the free proxy API
 		if randint(1, 50) == 7 or attempts > 0:
+			print('Getting a new proxy.')
 			try:
 				p = self.proxy.get_proxy()
 				if not p:
@@ -84,7 +85,7 @@ class BikeScraper:
 					return False
 				return switch_proxy(attempts + 1)
 		self.proxies = { 'http': self.proxy_list[randint(0, len(self.proxy_list) - 1)] }
-		if self.verbose and self.proxies != False:
+		if self.verbose and self.proxies['http'] != False:
 			print("Switched proxy to {}.".format(self.proxies['http']))
 			
 
