@@ -13,7 +13,7 @@ class Database:
 
 	def save(self, data):
 		try:
-			with open("{}/{}-{}.pickle".format(self.data_dir, self.prefix, self.files_written), 'wb') as fd:
+			with open("{}/{}-{}.pickle".format(self.data_dir, self.prefix, self.files_written+1), 'wb') as fd:
 				self.files_written += 1
 				pickle.dump(data, fd, protocol=pickle.HIGHEST_PROTOCOL)
 		except:
