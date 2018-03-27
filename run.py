@@ -15,8 +15,6 @@ except:
 		'data_dir': './data'
 	}
 
-config['base_url'] = 'https://www.bike-parts-honda.com'
-
 def perform_extraction(countries):
 	for country in countries:
 		p = Proxy()
