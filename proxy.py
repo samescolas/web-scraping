@@ -18,7 +18,5 @@ class Proxy:
 			self.ip = data['ip']
 			self.port = data['port']
 		except:
-			self.ip = '0'
-			self.port = '80'
 			return False
 		return "http://{}".format(data['ipPort'])
