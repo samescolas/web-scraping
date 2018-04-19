@@ -12,13 +12,12 @@ class CLSpider(scrapy.Spider):
 		for job in response.css('p.result-info'):
 			title = job.css('a.result-title::text').extract_first()
 			link = job.css('a.result-title::attr(href)').extract_first()
-			ad_response = Request(link)
-			yield { 
-				'title': title,
-				'link': link,
-				'response': ad_response
-			}
+			#ad_response = Request(link)
+			yield Request(link, callback=self.parse_ad, meta={ 'title': title })
 
 	def parse_ad(self, response):
-		print("IM INSIDE PARSE_AD!!!! ", response)
-		return {'biznatch': response}
+		description = "".join(line for line in response.css('section#postingbody::text').extract())
+		yield {
+			'description': description,
+			'title': response.meta['title']
+		}
